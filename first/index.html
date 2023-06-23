@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>설문조사</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>설문조사</h1>
+  <form>
+    <div class="question">
+      <label for="name">이름:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="question">
+      <label for="age">나이:</label>
+      <input type="number" id="age" name="age" required>
+    </div>
+    <div class="question">
+      <label for="gender">성별:</label>
+      <select id="gender" name="gender" required>
+        <option value="">선택하세요</option>
+        <option value="male">남성</option>
+        <option value="female">여성</option>
+        <option value="other">기타</option>
+      </select>
+    </div>
+    <div class="question">
+      <p>동의하십니까?</p>
+      <input type="checkbox" id="agreement" name="agreement" required>
+      <label for="agreement">동의합니다.</label>
+    </div>
+    <button type="button" onclick="click"><a href="question/question.html">NEXT</a></button>
+  </form>
+</body>
+</html>
