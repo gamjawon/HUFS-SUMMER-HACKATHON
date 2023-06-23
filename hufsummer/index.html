@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>설문조사</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>설문조사</h1>
+  <form>
+    <div class="question">
+      <label for="name">이름:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="question">
+      <label for="age">나이:</label>
+      <input type="number" id="age" name="age" required>
+    </div>
+    <div class="question">
+      <label for="gender">성별:</label>
+      <select id="gender" name="gender" required>
+        <option value="">선택하세요</option>
+        <option value="male">남성</option>
+        <option value="female">여성</option>
+        <option value="other">기타</option>
+      </select>
+    </div>
+    <div class="question">
+      <label for="feedback">의견:</label>
+      <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
+    </div>
+    <div class="question">
+      <p>선호하는 언어:</p>
+      <input type="checkbox" id="language1" name="language" value="javascript">
+      <label for="language1">JavaScript</label>
+      <input type="checkbox" id="language2" name="language" value="python">
+      <label for="language2">Python</label>
+      <input type="checkbox" id="language3" name="language" value="java">
+      <label for="language3">Java</label>
+    </div>
+    <div class="question">
+      <p>가장 선호하는 컴퓨터 운영체제:</p>
+      <input type="radio" id="os1" name="os" value="windows">
+      <label for="os1">Windows</label>
+      <input type="radio" id="os2" name="os" value="mac">
+      <label for="os2">Mac</label>
+      <input type="radio" id="os3" name="os" value="linux">
+      <label for="os3">Linux</label>
+    </div>
+    <div class="question">
+      <p>동의하십니까?</p>
+      <input type="checkbox" id="agreement" name="agreement" required>
+      <label for="agreement">동의합니다.</label>
+    </div>
+    <button type="submit">제출</button>
+  </form>
+</body>
+</html>
