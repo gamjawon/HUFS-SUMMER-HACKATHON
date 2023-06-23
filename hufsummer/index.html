@@ -21,38 +21,38 @@
         <option value="">선택하세요</option>
         <option value="male">남성</option>
         <option value="female">여성</option>
-        <option value="other">기타</option>
+        <option value="other">밝히고 싶지 않음</option>
       </select>
     </div>
     <div class="question">
-      <label for="feedback">의견:</label>
-      <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
+      <label for="mbti_type">본인의 MBTI는: </label>
+      <select id="mbti_type" name="mbti" required>
+        <option value="">선택하세요</option>
+        <option value="ENFJ">ENFJ</option>
+        <option value="ENTJ">ENTJ</option>
+        <option value="ENFP">ENFP</option>
+        <option value="ENTP">ENTP</option>
+        <option value="ESFP">ESFP</option>
+        <option value="ESFJ">ESFJ</option>
+        <option value="ESTP">ESTP</option>
+        <option value="ESTJ">ESTJ</option>
+        <option value="INFP">INFP</option>
+        <option value="INFJ">INFJ</option>
+        <option value="INTP">INTP</option>
+        <option value="ISTP">ISTP</option>
+        <option value="ISFP">ISFP</option>
+        <option value="ISFJ">ISFJ</option>
+        <option value="ISTJ">ISTJ</option>
+        <option value="INTJ">INTJ</option>
+      </select>
     </div>
+
     <div class="question">
-      <p>선호하는 언어:</p>
-      <input type="checkbox" id="language1" name="language" value="javascript">
-      <label for="language1">JavaScript</label>
-      <input type="checkbox" id="language2" name="language" value="python">
-      <label for="language2">Python</label>
-      <input type="checkbox" id="language3" name="language" value="java">
-      <label for="language3">Java</label>
-    </div>
-    <div class="question">
-      <p>가장 선호하는 컴퓨터 운영체제:</p>
-      <input type="radio" id="os1" name="os" value="windows">
-      <label for="os1">Windows</label>
-      <input type="radio" id="os2" name="os" value="mac">
-      <label for="os2">Mac</label>
-      <input type="radio" id="os3" name="os" value="linux">
-      <label for="os3">Linux</label>
-    </div>
-    <div class="question">
-      <p>동의하십니까?</p>
+      <p>개인정보 동의에 동의하십니까?</p>
       <input type="checkbox" id="agreement" name="agreement" required>
       <label for="agreement">동의합니다.</label>
     </div>
-    <button type="submit">제출</button>
+    <button type="next">다음</button>
   </form>
 </body>
 </html>
-
